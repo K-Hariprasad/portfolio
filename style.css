@@ -149,7 +149,6 @@ header .navbar ul li a.active::before{
     margin-top: 15px;
 }
 .btn-style-1{
-    color: black;
     font-size: 16px;
     line-height: 25px;
     display: inline-block;
@@ -159,28 +158,12 @@ header .navbar ul li a.active::before{
     outline: 1px solid white;
     background-color: white;
 }
+
 .btn-style-1:hover{
-    color:white;
-    outline: 1px solid white;
-    background-color: transparent;
-}
-.btn-style-2{
-    margin-left: 10px;
-    color: white;
-    font-size: 16px;
-    line-height: 25px;
-    display: inline-block;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 12px 30px;
     outline: 1px solid crimson;
     background-color: crimson;
 }
-.btn-style-2:hover{
-    outline: 1px solid white;
-    background-color: transparent;
-    
-}
+
 #about{
 padding: 80px 15px;
 margin-left: 25px;
@@ -387,5 +370,21 @@ margin-left: 25px;
     }
 }
 @media(max-width:500px){
-
+    .home .home-content .block h1 {
+        font-size: 40px;
+    }
+    .home .home-content .block h3 {
+        font-size: 20px;
+        font-weight: 600;  
+    }
+    .btn-style-1{
+        font-size: 16px;
+        line-height: 25px;
+        display: inline-block;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 5px 20px;    
+        outline: 1px solid white;
+        background-color: white;
+    }
 }
