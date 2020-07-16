@@ -163,69 +163,48 @@ header .navbar ul li a.active::before{
     outline: 1px solid crimson;
     background-color: crimson;
 }
-
-#about{
-padding: 80px 15px;
-margin-left: 25px;
-}
-#about .section-title h1{
-    flex: 0 0 100%;
-    max-width: 100%;
-    font-size: 35px;
-    font-weight: 700px;
+.info label{
     color: crimson;
-    position: relative;
-    margin-bottom: 30px;
+    font-weight: 700;
 }
-
-#about .about-content .text{
-    padding-left: 30px;
+.col-md-5{
+    padding-left: 0!important;
 }
-#about .about-content .text h4{
+.col-md-7{
+    padding-left: 0!important;
+}
+.info p{
+    color: black;
+    font-weight: 500;
+    padding-left: 25px;
+}
+.image{
+    width: 240px;
+    height: 360px;
+    justify-self: center;
+}
+.name{
     font-size: 35px;
     font-weight: 600;
     margin: 0 0 5px;
 }
-#about .about-content .text h6{
+.desc{
     font-size: 22px;
     font-weight: 500;
     margin: 0 0 15px;
 }
 .crim{
     color: crimson;
-    font-weight: 600;
 }
-#about .about-content .text p{
+.p-desc{
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     color: #272626;
     margin: 0 0 25px;
 }
-#about .about-content .text .info{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-#about .about-content .text .info .list{
-    flex: 0 0 calc(50% - 15px);
-    max-width: calc(50% - 15px);
-    margin-top: 10px;
-    display: flex;
-    border-bottom:  1px solid #dee2e6;
-}
-.info .list label{
-    padding-right: 10px;
-    color: crimson;
-    font-weight: 600;
-    font-size: 15px;
-}
-.info .list p{
-    color:#dee2e6 ;
-    font-weight: 300;
-}
 .social-links{
-    padding-top: 25px;
+    padding-top: 8px;
 }
 .social-links a .fa{
     color: white;
@@ -247,7 +226,19 @@ margin-left: 25px;
 .social-links a:hover{
     background: crimson;
     border: 1px solid crimson;
+} 
+#about .section-title h1{
+    padding-left: 20px;
+    margin-top: 30px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    font-size: 35px;
+    font-weight: 700;
+    color: crimson;
+    position: relative;
+    margin-bottom: 30px;
 }
+
 #skills{
     display: flex;
     justify-content: center;
@@ -356,18 +347,10 @@ margin-left: 25px;
     header{
         padding:15px
     }
-    #about .about-content .text{
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding-left: 0px;
-    }
+   
 }
 @media(max-width:691px){
-    #about .about-content .text{
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding-left: 0px;
-    }
+    
 }
 @media(max-width:500px){
     .home .home-content .block h1 {
@@ -387,4 +370,31 @@ margin-left: 25px;
         outline: 1px solid white;
         background-color: white;
     }
+    .name{
+        margin-top: 15px;
+    }
+    .desc{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .p-desc{
+        font-size: 14px;
+        justify-self: center;
+    }
+    .info label{
+        color: crimson;
+        font-weight: 500;
+        font-size: 13px;
+    }
+    .info p{
+        color: black;
+        font-weight: 400;
+        font-size: 13px;
+        padding-left: 25px;
+    }
+    .image{
+        justify-self: center;
+        padding-left: 7%;
+    }
 }
+
