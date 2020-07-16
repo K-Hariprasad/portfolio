@@ -1,56 +1,176 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+
 <body>
-    <header>
-      <div class="container">
-        <div class="row">
+  <header>
+    <div class="header-container">
+      <div class="header-row">
         <div class="brand-name">
           <a href="/" class="logo">H</a>
         </div>
         <div class="navbar">
           <ul>
-            <li><a href="" class="active">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Skills</a></li>
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="">Contact</a></li>
           </ul>
         </div>
       </div>
-      </div>
-    </header>
-
-    <section class="home"> 
-      <div class="container">
-        <div class="row fullscreen"> 
-          <div class="home-content"> 
-            <div class="block"> 
-              <h6>Hi I'm,</h6>
-              <h1>Hariprasad</h1>
-              <h3>Full stack developer and graphic designer</h3>
-              <div class="bt">
-                <a class="btn-style-1">View More</a>
-                <a class="btn-style-2">Contact</a>
-            </div>
+    </div>
+  </header>
+  <!-- ------------------Home----------------- -->
+  <section class="home">
+    <div class="container">
+      <div class="row fullscreen">
+        <div class="home-content">
+          <div class="block col-md-4">
+            <h6>Hi I'm,</h6>
+            <h1>Hariprasad</h1>
+            <h3>Full stack developer and graphic designer</h3>
+            <div class="bt">
+              <a class="btn-style-1">View More</a>
+              <a class="btn-style-2">Contact</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  <!-- --------------------About---------------------  -->
 
-<!-- -------------script---------------- -->
-<script src="script.js"></script>
+  <section id="about">
+    <div class="abt-container">
+      <div class="row">
+        <div class="section-title">
+          <h1>About Me</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-12">
+          <div class="image">
+            <img src="images/about-me.jpeg">
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-8">
+          <div class="about-content">
+            <div class="row">        
+              <div class="text">
+                <h4>Hariprasad</h4>
+                <h6><span class="crim">Full stack developer </span> &nbsp;and &nbsp; <span class="crim">graphic
+                    designer</span> </h6>
+                <p>
+                  I love to work in User Experience & User Interface designing. Because I love to solve the design problem
+                  and find easy and better solutions to solve it. I always try my best to make good user interface with
+                  the best user experience.
+                </p>
+                <div class="info">
+                  <div class="list">
+                    <label>Date Of Birth :</label>
+                    <p>30 Mar 1997</p>
+                  </div>
+                  <div class="list">
+                    <label>Email :</label>
+                    <p>hariprasadk125@gmail.com</p>
+                  </div>
+                  <div class="list">
+                    <label>Phone :</label>
+                    <p>8606788411</p>
+                  </div>
+                  <div class="list">
+                    <label>Nationality :</label>
+                    <p>Indian</p>
+                  </div>
+                  <div class="list">
+                    <label>City :</label>
+                    <p>Kozhikode, Kerala</p>
+                  </div>
+                  <div class="list">
+                    <label>Education :</label>
+                    <p>B-Tech(Hons.) Mechanical</p>
+                  </div>
+                  <div class="list">
+                    <label>Languages :</label>
+                    <p>English, Malayalam</p>
+                  </div>
+                  <div class="list">
+                    <label>Hobbies :</label>
+                    <p>Photography, Graphic designing</p>
+                  </div>
+                </div>
+                <div class="social-links">
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-github"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>            
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------Skills------------------- -->
+  <!-- <section id="skills">
+    <div class="skill-container">
+      <div class="skill-card">
+        <div class="box">
+          <div class="percent">
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div class="number">
+              <h2>90<span>%</span></h2>
+            </div>
+          </div>
+          <h2 class="text">HTML</h2>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="box">
+          <div class="percent">
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div class="number">
+              <h2>90<span>%</span></h2>
+            </div>
+          </div>
+          <h2 class="text">CSS</h2>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="box">
+          <div class="percent">
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div class="number">
+              <h2>90<span>%</span></h2>
+            </div>
+          </div>
+          <h2 class="text">HTML</h2>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- -------------script---------------- -->
+  <script src="script.js"></script>
 
 </body>
+
 </html>
-
-
-
-
-
-
-

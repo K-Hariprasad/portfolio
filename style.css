@@ -11,11 +11,29 @@ body{
     box-sizing: border-box;
     margin: 0;
 }
-.container{
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: crimson; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: white; 
+  }
+.header-container{
     max-width: 1140px;
     margin: auto;
 }
-.row{
+.header-row{
     display: flex;
     flex-wrap: wrap;
 }
@@ -27,7 +45,10 @@ header{
     padding: 0px 15px;
     z-index: 10;
 }
-header .row{
+header .fixed{
+    background: red;
+}
+header .header-row{
     justify-content: space-between;
     align-items: center;
 }
@@ -94,6 +115,8 @@ header .navbar ul li a.active::before{
     align-items: center;
 }
 .home .home-content .block{
+    justify-content: center;
+    align-items: center;
     flex: 0 0 75%;
     max-width: 75%;
     padding-left: 35px;
@@ -126,19 +149,20 @@ header .navbar ul li a.active::before{
     margin-top: 15px;
 }
 .btn-style-1{
-    color: white;
+    color: black;
     font-size: 16px;
     line-height: 25px;
     display: inline-block;
-    font-weight: 300;
+    font-weight: 500;
     text-decoration: none;
     padding: 12px 30px;    
     outline: 1px solid white;
-    background-color: transparent;
+    background-color: white;
 }
 .btn-style-1:hover{
-    outline: 1px solid crimson;
-    background-color: crimson;
+    color:white;
+    outline: 1px solid white;
+    background-color: transparent;
 }
 .btn-style-2{
     margin-left: 10px;
@@ -146,7 +170,7 @@ header .navbar ul li a.active::before{
     font-size: 16px;
     line-height: 25px;
     display: inline-block;
-    font-weight: 300;
+    font-weight: 500;
     text-decoration: none;
     padding: 12px 30px;
     outline: 1px solid crimson;
@@ -156,4 +180,212 @@ header .navbar ul li a.active::before{
     outline: 1px solid white;
     background-color: transparent;
     
+}
+#about{
+padding: 80px 15px;
+margin-left: 25px;
+}
+#about .section-title h1{
+    flex: 0 0 100%;
+    max-width: 100%;
+    font-size: 35px;
+    font-weight: 700px;
+    color: crimson;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#about .about-content .text{
+    padding-left: 30px;
+}
+#about .about-content .text h4{
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+#about .about-content .text h6{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 15px;
+}
+.crim{
+    color: crimson;
+    font-weight: 600;
+}
+#about .about-content .text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #272626;
+    margin: 0 0 25px;
+}
+#about .about-content .text .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#about .about-content .text .info .list{
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    margin-top: 10px;
+    display: flex;
+    border-bottom:  1px solid #dee2e6;
+}
+.info .list label{
+    padding-right: 10px;
+    color: crimson;
+    font-weight: 600;
+    font-size: 15px;
+}
+.info .list p{
+    color:#dee2e6 ;
+    font-weight: 300;
+}
+.social-links{
+    padding-top: 25px;
+}
+.social-links a .fa{
+    color: white;
+    font-size: 15px;
+}
+.social-links a{
+    height: 30px;
+    width: 30px;
+    background: black;
+    border-radius: 3px;
+    display: inline-block;
+    border: 1px solid black;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 1px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: crimson;
+    border: 1px solid crimson;
+}
+#skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #101010;
+    min-height: 80vh;
+}
+.skill-container{
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+}
+.skill-card{
+    position: relative;
+    width: 250px;
+    background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.skill-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+.skill-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.03);
+    pointer-events: none;
+    z-index: 1;
+}
+.percent{
+    position: relative;
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 100;
+}
+.percent .number{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #f1f1f1;
+}
+.skill-card:hover .box .text{
+    color: #fff;
+    font-size: 22px;
+}
+.box .text{
+    position: relative;
+    color: rgb(156, 156, 156);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+.percent svg{
+    position: relative;
+    width: 150px;
+    height:150px;
+    z-index:100
+}
+.percent svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px,5px)
+}
+.percent svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+.skill-card:nth-child(1) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440*90)/100);
+    stroke: crimson;
+
+}
+
+@media(max-width:991px){
+    .home .home-content .block h1{
+        font-size: 50px;
+    }
+}
+
+@media(max-width:767px){
+    header{
+        padding:15px
+    }
+    #about .about-content .text{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0px;
+    }
+}
+@media(max-width:691px){
+    #about .about-content .text{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0px;
+    }
+}
+@media(max-width:500px){
+
 }
